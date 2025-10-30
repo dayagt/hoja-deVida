@@ -71,3 +71,5 @@ export default defineConfig([
   },
 ])
 ```
+Despliegue por NETLIFLY
+https://dayagt.github.io/hoja-deVida/
