@@ -1,75 +1,63 @@
-# React + TypeScript + Vite
+📄 Hoja de Vida — Proyecto Web Personal
+Repositorio público con el código fuente completo de una hoja de vida interactiva, desarrollada con tecnologías modernas y enfoque responsivo.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tecnologías utilizadas
+HTML5 — estructura semántica y accesible
 
-Currently, two official plugins are available:
+CSS3 — diseño responsivo, animaciones y estilos personalizados
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+JavaScript / TypeScript — interactividad y validaciones
 
-## React Compiler
+Git & GitHub — control de versiones y despliegue
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Visual Studio Code — entorno de desarrollo
 
-## Expanding the ESLint configuration
+Figma / Canva (opcional) — diseño visual previo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+📦 Estructura del proyecto
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+hoja-deVida/
+├── index.html
+├── style.css
+├── script.js / script.ts
+├── assets/
+│   ├── images/
+│   └── icons/
+├── README.md
+🛠️ Instrucciones para clonar y ejecutar
+Clonar el repositorio
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+bash
+git clone https://github.com/dayagt/hoja-deVida.git
+cd hoja-deVida
+Abrir el proyecto
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Puedes abrir la carpeta directamente en Visual Studio Code o cualquier editor de tu preferencia.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Ejecutar localmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Abre el archivo index.html en tu navegador. No se requiere servidor ni instalación adicional.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-Despliegue por NETLIFLY
+🌐 Publicar el proyecto
+Opción 1: GitHub Pages
+Ve a la configuración del repositorio en GitHub
+
+Busca la sección Pages
+
+Selecciona la rama main y carpeta raíz (/)
+
+Guarda y espera unos segundos
+
+Tu proyecto estará disponible en:
+
+Código
 https://dayagt.github.io/hoja-deVida/
+Opción 2: Netlify
+Ve a https://www.netlify.com
+
+Conecta tu cuenta de GitHub
+
+Selecciona el repositorio hoja-deVida
+
+Netlify desplegará automáticamente tu sitio
+https://magical-smakager-72f1d3.netlify.app/
